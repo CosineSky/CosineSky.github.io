@@ -54,7 +54,7 @@ btnRoll.addEventListener('click', function () {
     diceEl.src = `dice-${dice}.png`;
 
     // 3. Check for rolled 1
-    if (dice !== 1 && dice !== 6) {
+    if (dice !== 6) {
       // Add dice to current score
       currentScore += dice;
       document.getElementById(
