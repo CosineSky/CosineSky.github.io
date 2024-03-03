@@ -1,161 +1,36 @@
 <!DOCTYPE html>
-<html lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>NFCC | It's Minigame Time</title>
-        <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="stylesheets/style.css">
-        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap-grid.min.css">
-    </head>
-    <body>
-        <header class="main-header">
-            <h1 class="logo-text">Welcome to NFC Championships!</h1>
-            <hr width=100% size=8px>
-        </header>
-        <main class="main-content">
-            <div class="detail-image-container">
-                <div class="detail-image-frame" data-image-role="frame">
-                    <img class="detail-image" data-image-role="target" src="pics/nfc1.png" alt="">
-                    <span class="detail-image-title" data-image-role="title">Tournament Hall</span>
-                </div>
-                <span class="detail-image-description" data-image-role="description">NFCC event hall.</span>
-            </div>
-            <ul class="thumbnail-list">
-                <li class="thumbnail-item">
-                    <a href="pics/bw.png" data-image-role="trigger" data-image-title="Map: Setting Sails" data-image-url="pics/bw.png" desc="各大小游戏服务器上的经典游戏——起床战争。">
-                        <img class="thumbnail-image" src="pics/bw.png" alt="">
-                        <span class="thumbnail-title">Bedwars</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/qc.png" data-image-role="trigger" data-image-title="Map: Quake Town" data-image-url="pics/qc.png" desc="著名服务器 Hypixel 的经典射击游戏。在迷宫般的地图中穿梭，使用钓竿进行射击，命中玩
-家后一击必杀，但玩家可无限复活。
-">
-                        <img class="thumbnail-image" src="pics/qc.png" alt="">
-                        <span class="thumbnail-title">Quakecraft</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/sh.png" data-image-role="trigger" data-image-title="Map: Aztec" data-image-url="pics/sh.png" desc="是曾在远古的 1.7~1.8 时代风靡国内各小游戏服务器的快节奏游戏——夺羊大战的改编版。
-所有玩家出生即成为法师，可以使用法杖吸收地图中央的羊，吸收后自己成为羊，并跑回
-自己的基地将羊的灵魂释放。与此同时你可以与其他法师展开战斗，或者潜入他们的基地
-偷取里面的羊。游戏结束时基地中剩余羊最多的队伍获胜。">
-                        <img class="thumbnail-image" src="pics/sh.png" alt="">
-                        <span class="thumbnail-title">Sheep Hoarders</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/bb.png" data-image-role="trigger" data-image-title="Map: Abstract Lava" data-image-url="pics/bb.png" desc="红蓝两队将在一张小型地图内正面对决，率先用羊毛填满地图中间区域的一方获胜。
-被击杀后你将无法复活。
-">
-                        <img class="thumbnail-image" src="pics/bb.png" alt="">
-                        <span class="thumbnail-title">Battle Box</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/sg.png" data-image-role="trigger" data-image-title="Map: NJU but Minecraft!" data-image-url="pics/sg.png" desc="经典 PVP 游戏——饥饿游戏。
-你将出生在一张大型地图的中心，通过收集散布在各处的补给箱强化自己，只身一人与其
-他玩家战斗，在被不断缩小的边境吞噬之前尽力成为活到最后的玩家。
-">
-                        <img class="thumbnail-image" src="pics/sg.png" alt="">
-                        <span class="thumbnail-title">Survival Games</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/tj.png" data-image-role="trigger" data-image-title="Map: Seasons" data-image-url="pics/tj.png" desc="硬核跑酷地图，难度较高，但做了一些修改。
-允许不限次跳关，虽然这样不会得到任何加分和时长。
-游戏限时 180 秒，共有 32 个存档点。好消息是，每到达一处存档点你的剩余时间将延长。
-">
-                        <img class="thumbnail-image" src="pics/tj.png" alt="">
-                        <span class="thumbnail-title">The Journeys</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/tt.png" data-image-role="trigger" data-image-title="Map: Grand Mansion" data-image-url="pics/tt.png" desc="甩锅大战来了。
-每轮游戏内 1~3 名玩家被随机选中成为炸弹人。炸弹人击打任意幸存者（或投掷苦力怕飞
-弹）以将头上的 TNT 传递出去，以此反复。每轮后所有炸弹人自爆并被淘汰，随后进入
-下一轮。最终的幸存者获胜。
-">
-                        <img class="thumbnail-image" src="pics/tt.png" alt="">
-                        <span class="thumbnail-title">TNT Tags</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/mb.png" data-image-role="trigger" data-image-title="Map: The End" data-image-url="pics/mb.png" desc="记忆和速建的综合比拼。
-每轮内你有 15 秒的时间记忆一个小型建筑，并在随后的 45 秒内尽力复原它。
-">
-                        <img class="thumbnail-image" src="pics/mb.png" alt="">
-                        <span class="thumbnail-title">Maniac Builders</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/mm.png" data-image-role="trigger" data-image-title="Map: Headquarters" data-image-url="pics/mm.png" desc="在密室内穿行，如果你是平民，那么尽力活到最后；如果你是杀手......
-当然，平民也用弓箭来给予杀手致命一击；但你只有一支箭，且误杀平民会被淘汰。">
-                        <img class="thumbnail-image" src="pics/mm.png" alt="">
-                        <span class="thumbnail-title">Murder Mystery</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/mm.png" data-image-role="trigger" data-image-title="Map: The Castle" data-image-url="pics/mw.png" desc="保护好城堡内的守卫者，并击垮其它队伍的守卫者。
-抢夺随机技能，给场上其他玩家一个惊喜；并和队友合作，尽力成为活到最后的队伍！
-">
-                        <img class="thumbnail-image" src="pics/mw.png" alt="">
-                        <span class="thumbnail-title">Guardian Leagues</span>
-                    </a>
-                </li>
-                <li class="thumbnail-item">
-                    <a href="pics/mm.png" data-image-role="trigger" data-image-title="Map: Desert Temple" data-image-url="pics/ld.png" desc="你出生在神庙中央，不幸的是，你脚下的方块被填充为 TNT。
-通过射击其他玩家下方的 TNT，来试图让他们坠入神庙下方的熔岩吧。
-">
-                        <img class="thumbnail-image" src="pics/ld.png" alt="">
-                        <span class="thumbnail-title">Lava Dancers</span>
-                    </a>
-                </li>
-<!--                <li class="thumbnail-item">-->
-<!--                    <a href="pics/mm.png" data-image-role="trigger" data-image-title="Map: Music of the Spring" data-image-url="pics/rr.png" desc="Map: Music of the Spring">-->
-<!--                        <img class="thumbnail-image" src="pics/rr.png" alt="">-->
-<!--                        <span class="thumbnail-title">Rainbow Rhythms</span>-->
-<!--                    </a>-->
-<!--                </li>-->
-            </ul>
-        </main>
-        <main class="box">
-            <hr width=90% size=8px>
-            <h1 class="sub-logo-text">Join us now!</h1>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <form data-requests="form" class="application-form">
-                        <div class="form-group">
-                            <label class="prompt" for="qq">QQ or Email:</label>
-                            <label>
-                                <input class="form-control" name="qq" id="qq" placeholder="834289395">
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label class="prompt" for="ign">Minecraft In-game ID:</label>
-                            <label>
-                                <input class="form-control" name="ign" id="ign" placeholder="CosSky">
-                            </label>
-                        </div>
-                        <label class="prompt">Evaluate Your Level: (This may affect team division.)</label>
-                        <div class="radio">
-                            <label>
-                                <input type="range" name="game" value=50 class="chosen-game">
-                            </label>
-                        </div>
-                        <div class="buttons">
-                            <button type="submit" class="btn btn-default">Submit</button>
-                            <button type="reset" class="btn btn-default">Reset</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <hr width=95% size=8px>
-        </main>
-        <script src="scripts/datastore.js" charset="utf-8"></script>
-        <script src="scripts/truck.js" charset="utf-8"></script>
-        <script src="scripts/main.js" charset="utf-8"></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Some Very Boring Game</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">📥 Hold</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
